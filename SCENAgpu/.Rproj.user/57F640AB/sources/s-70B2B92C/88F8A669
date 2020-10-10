@@ -1,0 +1,24 @@
+{
+    "id": "88F8A669",
+    "path": "E:/SCENA_gpu/SCENAgpu/R/KNN_SMI.R",
+    "project_path": "R/KNN_SMI.R",
+    "type": "r_source",
+    "hash": "798761222",
+    "contents": "",
+    "dirty": false,
+    "created": 1602300051466.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "cursorPosition": "92,40",
+        "scrollLine": "85"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1602316453,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1602316453670,
+    "read_only": false,
+    "read_only_alternatives": []
+}
