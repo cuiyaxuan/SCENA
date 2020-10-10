@@ -1,7 +1,10 @@
 # SCENA
-
+### The program need to install parallel,SNFtool,apcluster package.
 ```
 
+```
+### give two examples  
+```
 #The program need to install parallel,SNFtool,apcluster package.
 install.packages(parallel)
 install.packages(SNFtool)
@@ -10,8 +13,8 @@ library(scLAEC1)
 #Import the dataset Express=read.table("E:/Biase3celltypes.txt",header = T, comment.char='!',stringsAsFactors = FALSE,quote = "",sep='\t')
 Express=Express[,-1]
 len=ncol(Express)
-Express=Express[apply(Express,1,function(x) sum(x>1)>len0.05),]
-Express=Express[apply(Express,1,function(x) sum(x>1)<len0.95),]
+Express=Express[apply(Express,1,function(x) sum(x>1)>len*0.05),]
+Express=Express[apply(Express,1,function(x) sum(x>1)<len*0.95),]
 Express=apply(Express,2,as.numeric)
 #Distribute the number of cores in a computer
 library(parallel)
@@ -55,8 +58,6 @@ library(mclust)
 a<-c(1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3)
 b=as.vector(res)
 adjustedRandIndex(a,b)
-
-
 ```
 
 
