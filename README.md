@@ -1,6 +1,7 @@
 # SCENA
 
-<Tab><Tab>
+```
+
 #The program need to install parallel,SNFtool,apcluster package.
 install.packages(parallel)
 install.packages(SNFtool)
@@ -55,7 +56,11 @@ a<-c(1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3
 b=as.vector(res)
 adjustedRandIndex(a,b)
 
-</Tab></Tab>
+
+```
+
+
+
 
 
 
