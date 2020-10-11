@@ -231,6 +231,7 @@ tt=result(group1,group2,group3,group4,group5)
 #Selection of digital
 #Numberis the median in max(group1),max(group2),max(group3),max(group4),max(group5)
 res=spectralClustering(tt, 12)
+library(mclust)
 b=as.vector(res)
 adjustedRandIndex(a,b)
 ```
