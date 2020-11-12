@@ -173,7 +173,7 @@ source('ApSpe.R')
 source('interior.R')
 source('KNN_SMI.R')
 source('result.R')
-Express=read.table("/home/student/disk2/student/cui/klein/klein.txt",,header = T, comment.char='!',stringsAsFactors = FALSE,quote = "",sep=" ")
+Express=read.table("....../klein/klein.txt",,header = T, comment.char='!',stringsAsFactors = FALSE,quote = "",sep=" ")
 dim(Express)
 len=ncol(Express)
 Express=Express[apply(Express,1,function(x) sum(x>1)>len*0.05),]
