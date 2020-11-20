@@ -44,7 +44,7 @@ install.packages(parallel)
 install.packages(SNFtool)
 install.packages(apcluster)
 install.packages(mclust)
-library(scLAEC1)
+library(SCENAcpu)
 #Import the dataset Express=read.table("E:/Biase3celltypes.txt",header = T, comment.char='!',stringsAsFactors = FALSE,quote = "",sep='\t')
 Express=Express[,-1]
 len=ncol(Express)
@@ -100,7 +100,7 @@ install.packages(parallel)
 install.packages(SNFtool)
 install.packages(apcluster)
 install.packages(mclust)
-library(scLAEC1)
+library(SCENAcpu)
 #Import the dataset
 Express=read.table("E:/kolodziejczyk_0.txt",header = T,comment.char='!',stringsAsFactors = FALSE,quote = "",sep='\t')
 Express=Express[,-1]
