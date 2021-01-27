@@ -6,20 +6,31 @@
 ## Citation: Consensus Clustering of Single-cell RNA-seq Data by Enhancing Network Affinity, to be published.
 
 
-### The program need to install parallel,SNFtool,apcluster package.
+### First, we load the packages.
 ```
 install.packages(parallel)
 install.packages(SNFtool)
 install.packages(apcluster)
 install.packages(mclust)
 ```
-### Import the dataset
+### Second, we load the dataset (rows are genes, while columns are cells)
+### for a txt file:
 ```
-Express=read.table("E:/Biase3celltypes.txt",header = T)
+Express=read.table("E:/Biase3celltypes.txt",header = T,row.names = 1)
 ```
-### Preprocess the data(You can omit these steps)
+### for a csv file:
 ```
-Express=datapreprocess(Express)
+Express=read.csv("E:/Biase3celltypes.csv",header = T,row.names = 1)
+```
+### for a rds file:
+```
+library(SingleCellExperiment)
+biase<-readRDS("E:/biase.rds")
+Express=biase@assays$data$normcounts
+```
+### Third, preprocess the input data
+```
+Express=datapreprocess(Express,lognum = 1)  #log=1 is do log-transformation, log=0 is no log-transformation
 ```
 ### Loading package
 ```
