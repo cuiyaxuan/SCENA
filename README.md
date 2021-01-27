@@ -14,8 +14,8 @@ Express=Express[,-1]
 ### Preprocess the data(You can omit these steps)
 ```
 len=ncol(Express)
-Express=Express[apply(Express,1,function(x) sum(x>1)>len0.05),]
-Express=Express[apply(Express,1,function(x) sum(x>1)<len0.95),]
+Express=Express[apply(Express,1,function(x) sum(x>1)>len*0.05),]
+Express=Express[apply(Express,1,function(x) sum(x>1)<len*0.95),]
 Express=apply(Express,2,as.numeric)
 ```
 ### Distribute the number of cores in a computer
