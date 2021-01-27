@@ -49,7 +49,7 @@ stopCluster(cl)
 ```
 ### Acquiring label
 ```
-b=spectralClu()
+b=consClust()
 ```
 
 ### Computing ARI
